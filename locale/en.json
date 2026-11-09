@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Version updates and restart",
+    "description": "Checks for and installs a newer DSH release, and restarts the DSH service from the General settings section."
+  }
+}

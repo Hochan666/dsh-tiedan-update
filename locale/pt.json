@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Atualizações de versão e reinício",
+    "description": "Verifica e instala uma versão mais recente do DSH e reinicia o serviço DSH na seção Geral das configurações."
+  }
+}

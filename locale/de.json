@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Versionsupdates und Neustart",
+    "description": "Sucht eine neuere DSH-Version, installiert sie und startet den DSH-Dienst im Allgemein-Bereich der Einstellungen neu."
+  }
+}

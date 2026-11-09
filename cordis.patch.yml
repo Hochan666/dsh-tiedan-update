@@ -1,0 +1,14 @@
+# Host row for the dsh-tiedan-update bundle.
+# The browser half is discovered from the package's `dsh.client` section and
+# needs no row of its own.
+- insert:
+    - id: dsh-tiedan-update
+      name: 'dsh-tiedan-update'
+      config:
+        packageName: '@deepseek-ai/dsh'
+        registry: 'https://registry.npmmirror.com'
+        packageManager: 'npm'
+        serviceUnit: 'dsh.service'
+        # Optional: a shell command run after a successful install.
+        # Leave empty unless you need to re-apply a local patch to the new build.
+        postUpdateCommand: ''

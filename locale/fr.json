@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mises à jour et redémarrage",
+    "description": "Vérifie et installe une version plus récente de DSH, puis redémarre le service DSH depuis la section Général des paramètres."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "dsh-tiedan-update",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "在设置面板中检测 DSH 新版本、一键更新，并重启 DSH 服务 / Check for a newer DSH release, install it and restart the service from the Settings panel.",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "Hochan",
+  "homepage": "https://github.com/Hochan666/dsh-tiedan-update#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hochan666/dsh-tiedan-update.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hochan666/dsh-tiedan-update/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "update",
+    "upgrade",
+    "restart",
+    "plugin",
+    "cordis"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  },
+  "dependencies": {}
+}
