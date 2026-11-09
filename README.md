@@ -96,6 +96,17 @@ cd dsh-tiedan-update
 dsh plugin --profile web add "$PWD"
 ```
 
+也可以直接下载 zip 压缩包后按同样的方式安装：
+
+```bash
+# 下载指定版本（当前最新：v1.0.0）
+curl -LO https://github.com/Hochan666/dsh-tiedan-update/archive/refs/tags/v1.0.0.zip
+unzip v1.0.0.zip
+dsh plugin --profile web add "$PWD/dsh-tiedan-update-1.0.0"
+```
+
+或在仓库页面点 **Code → Download ZIP**（默认取默认分支）。
+
 `dsh plugin` 会把剩余参数转发给 profile 目录下的包管理器，本地目录会被**链接**进 profile。
 
 ### 方式二：在 DSH 插件市场安装 / Install from the plugin market
