@@ -1,5 +1,7 @@
 # dsh-tiedan-update
 
+<img src="assets/icon-180.png" width="96" alt="dsh-tiedan-update icon">
+
 > 在 DSH 设置面板里检测新版本、一键升级、一键重启。
 > Check for a new DSH release, upgrade in place, and restart — all from the Settings panel.
 
